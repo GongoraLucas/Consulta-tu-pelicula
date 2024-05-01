@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("./assets/imgs/fondo.png");
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    gap: 5px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid aliceblue;
+}
+
+.buscador {
+    width: 70%;
+    height: 10%;
+    /* margin: 0 auto; */
+    background: transparent;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.imagen {
+    width: 5%;
+    display: inline-block;
+    height: auto;
+}
+
+.busco {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    width: 100%;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    color: aliceblue;
+    padding: 5px;
+}
+
+.botonBuscar{
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color:  rgb(45, 45, 98);
+    border:1px solid aliceblue;
+    color: aliceblue;
+    overflow: hidden;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.botonBuscar:active{
+    background-color:rgb(68, 68, 238);
+}
+
+.informacion {
+    box-shadow: 3px -2px 29px 0px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    overflow: auto;
+    margin: 20px;
+    max-width: 50%;
+    height: 60vh;
+    border-radius: 20px;
+    border: 5px outset transparent;
+    padding: 5px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 10px;
+}
+
+.informacion::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.informacion::-webkit-scrollbar-track{
+    margin: 10px;
+    border-radius: 20px;
+
+}
+.informacion::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resultsFallido{
+    font-size: 2em;
+    display: grid;
+    place-content: center;
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+    gap: 2px;
+    background-color: transparent;
+    color: aliceblue;
+    text-align: center;
+    overflow: auto;
+    border-bottom: 2px solid aliceblue;
+}
+.movie img{
+    height: 30%;
+    width: 30%;
+    margin: 0 auto;
+}
+.movie h2{
+    color: rgb(35, 129, 144);
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+@media (max-width:832px) {
+    body{
+        padding: 5px;
+    }
+    header {
+        margin: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        gap: 5px;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+    }
+    .informacion{
+        margin: 10px auto;
+        max-width: 70%;
+    }
+
+    h1{
+        margin: 10px 0;
+    }
+    .botonBuscar{
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 20px;
+        background-color:  rgb(45, 45, 98);
+        border:1px solid aliceblue;
+        color: aliceblue;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    
+
+}
